@@ -18,3 +18,9 @@ public class Main{
         b.displayDetails();
     }
 }
+
+
+
+
+output
+<img width="965" height="543" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/0c4a756e-cc33-4dac-bea3-b52d83fa6bd1" />
