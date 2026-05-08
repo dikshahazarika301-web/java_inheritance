@@ -18,7 +18,44 @@ public class Main{
         b.displayDetails();
     }
 }
-
+class Employee{
+    String name;
+    int employeeId;
+    double salary;
+    void displayDetails(){
+        System.out.println("Name:"+name);
+        System.out.println("Id:"+employeeId);
+    }
+    double calculateSalary()
+    {
+        return salary;
+    }
+}
+class FullTimeEmployee extends Employee{
+    double bonus;
+    double calculateSalary(){
+        return salary+bonus;
+    }
+    void displayDetails()
+    {
+        super.displayDetails();
+        System.out.println("Bonus:"+bonus);
+        System.out.println("Total salary:"+calculateSalary());
+    }
+}
+class PartTimeEmployee extends Employee{
+    int hoursWorked;
+    double hourlyRate;
+    double calculateSalary(){
+        return hoursWorked + hourlyRate;
+    }
+    void displayDetails(){
+        super.displayDetails();
+        System.out.println("Hours Worked:"+hoursWorked);
+        System.out.println("Hourly Rate:"+hourlyRate);
+        System.out.println("Total salary:"+calculateSalary());
+    }
+}
 
 
 
